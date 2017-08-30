@@ -1,0 +1,17 @@
+<md-toolbar class="nav-bar" fullscreen *ngIf="showHeader">
+  <img class="toolbar-logo-img" src="../assets/0.jpg">
+  <h1 class="toolbar-logo-text">Asset Manager</h1>
+    <section class="toolbar-menu">
+    <a routerLink="home" md-button>Home</a>
+    <a routerLink="devices" md-button>Device</a>
+    <a routerLink="users" md-button>User</a>
+  </section>
+
+  <span class="fill"></span>
+
+  <md-icon class="toolbar-icon">more_horiz</md-icon>
+  <md-icon class="toolbar-icon" mdTooltip="Tooltip!" mdTooltipPosition="below" (click)="logout()">power_settings_new</md-icon>
+  
+</md-toolbar>
+
+<router-outlet (activate)='onActivate($event)'></router-outlet>

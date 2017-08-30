@@ -1,0 +1,33 @@
+<div class="demo-card-container">
+    <md-card *ngFor="let device of devices | async; let idx=index">
+      <md-card-header>
+        <img src="./assets/users/{{idx%9}}.png" md-card-avatar>
+        <md-card-title>{{device.name}}</md-card-title>
+        <md-card-subtitle>{{device.manufacturer}}</md-card-subtitle>
+
+      </md-card-header>
+      <br>
+        <md-card-content>
+            <div><span class="device-key">cordova: </span>
+            <span>"6.2.3"</span></div>
+            <div> <span class="device-key">isVirtual: </span>
+            <span>false</span></div>
+            <div> <span class="device-key">manufacturer: </span>
+            <span>"samsung"</span></div>
+            <div> <span class="device-key">model: </span>
+            <span>"SM-G935F"</span></div>
+            <div> <span class="device-key">name: </span>
+            <span>"Samsung edge"</span></div>
+            <div> <span class="device-key">platform: </span>
+            <span>"Android"</span></div>
+            <div> <span class="device-key">serial: </span>
+            <span>"ce0117110de95f0304"</span></div>
+            <div> <span class="device-key">uuid: </span>
+            <span>"ea91cba3692679c7"</span></div>
+            <div> <span class="device-key">version: </span>
+            <span>"6.0.1"</span>            </div>
+        </md-card-content>
+    </md-card>
+    <md-list>
+    </md-list>
+  </div>
